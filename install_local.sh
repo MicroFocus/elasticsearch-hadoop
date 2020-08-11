@@ -4,7 +4,7 @@ set -e
 PROJECT_ROOT=$(git rev-parse --show-toplevel)
 
 echo "Building es-hadoop jars with gradlew..."
-sh ${PROJECT_ROOT}/gradlew
+sh ${PROJECT_ROOT}/gradlew distZip
 
 # JAR and pom file 
 JAR="${PROJECT_ROOT}/build/distributions/elasticsearch-hadoop-6.8.12-SNAPSHOT/dist/elasticsearch-spark-20_2.12-6.8.12-SNAPSHOT.jar"
