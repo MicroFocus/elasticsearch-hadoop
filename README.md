@@ -4,6 +4,8 @@ Supports [Map/Reduce](#mapreduce), [Apache Hive](#apache-hive), [Apache Pig](#ap
 
 See  [project page](http://www.elastic.co/products/hadoop/) and [documentation](http://www.elastic.co/guide/en/elasticsearch/hadoop/current/index.html) for detailed information.
 
+Build against scala 2.12
+
 ## Requirements
 Elasticsearch (__1.x__ or higher (2.x _highly_ recommended)) cluster accessible through [REST][]. That's it!
 Significant effort has been invested to create a small, dependency-free, self-contained jar that can be downloaded and put to use without any dependencies. Simply make it available to your job classpath and you're set.
