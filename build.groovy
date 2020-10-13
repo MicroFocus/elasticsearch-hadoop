@@ -28,7 +28,7 @@ node("${params.BUILD_NODE}") {
                     sh(script: "sh ./gradlew clean distZip --stacktrace")
                 }
             }
-            archiveArtifacts artifacts: 'spark/sql-20/build/libs/*-SNAPSHOT.jar', fingerprint: true
+            archiveArtifacts artifacts: 'spark/sql-20/build/libs/*.jar', fingerprint: true
         }
     }
 
